@@ -18,4 +18,6 @@ def armijo(f, grad_f, x0, alpha=1e-4, beta=0.5, gamma=1):
     while f(x0 + gamma * z) > f_x + alpha * gamma * grad_f_x.T @ z :
         gamma = beta * gamma
 
-    return x0 + gamma * z
+    return x0 + gamma * z, gamma
+
+def armijo_forreal()
