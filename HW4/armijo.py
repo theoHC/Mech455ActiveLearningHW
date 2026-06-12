@@ -19,5 +19,3 @@ def armijo(f, grad_f, x0, alpha=1e-4, beta=0.5, gamma=1):
         gamma = beta * gamma
 
     return x0 + gamma * z, gamma
-
-def armijo_forreal()
